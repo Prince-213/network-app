@@ -37,9 +37,9 @@
 
 	const options = {
 		series: [
-			(bundle.length / total) * 100, 
-			(family.length / total) * 100,  
-			(premium.length / total) * 100, 
+			Math.round((bundle.length / total) * 100), 
+			Math.round((family.length / total) * 100),  
+			Math.round((premium.length / total) * 100), 
 		],
 		colors: ['#1C64F2', '#16BDCA', '#FDBA8C'],
 		chart: {
