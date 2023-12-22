@@ -57,8 +57,11 @@
 						pathName == link.path ? 'bg-[#B4CD93] text-black' : 'bg-transparent text-[#808080]'
 					} items-center space-x-4  transition-all duration-150`}
 				>
-					<svelte:component this={link.icon} />
-					<p class=" text-base font-medium">{link.title}</p>
+					<a href={link.path} data-sveltekit-preload-code="hover"  class=" flex space-x-4 items-center">
+						<svelte:component this={link.icon} />
+						<p class=" text-base font-medium">{link.title}</p>
+					</a>
+					
 				</button>
 			{/each}
 		</nav>
@@ -68,6 +71,7 @@
 					pathName == '/settings' ? 'bg-[#B4CD93] text-black' : 'bg-transparent text-[#808080]'
 				} items-center space-x-4  transition-all duration-150`}
 			>
+				
 				<svelte:component this={SettingsIcon} />
 				<p class=" text-base font-medium">Settings</p>
 			</li>

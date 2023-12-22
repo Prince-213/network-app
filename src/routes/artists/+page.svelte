@@ -61,10 +61,11 @@
 	<div class=" w-[95%] pb-10">
 		<div class=" relative w-full">
 			<caption
-				class="w-full bg-white p-5 text-left text-lg font-semibold text-gray-900 dark:bg-gray-800 dark:text-white"
+				class="w-full flex flex-col space-y-3 bg-white p-5 text-left text-lg font-semibold text-gray-900 dark:bg-gray-800 dark:text-white"
 			>
-				All Customers
-				<p class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+				<h1 class=" font-medium text-lg">All Customers</h1>
+				
+				<p class="mt-1 min-w-fit text-sm  font-normal text-gray-500 dark:text-gray-400">
 					Monitor artist sales, reviews, etc.
 				</p>
 			</caption>
